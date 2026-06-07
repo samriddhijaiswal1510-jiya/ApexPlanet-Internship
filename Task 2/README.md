@@ -65,4 +65,5 @@ Static mock-up defined inside the notebook with:
 
 ## LinkedIn Video
 A 5–7 minute walkthrough showcasing key insights and complex SQL queries has been posted on LinkedIn.
-> 🔗 [Add your LinkedIn post URL here]
+
+
