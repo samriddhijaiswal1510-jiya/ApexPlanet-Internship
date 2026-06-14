@@ -139,6 +139,22 @@ ApexPlanet-Internship/
 
 ---
 
-## 📬 Connect
-- **GitHub:** [samriddhijaiswal1510-jiya](https://github.com/samriddhijaiswal1510-jiya)
-- **LinkedIn:** *(Add your LinkedIn profile URL here)*
+## � Screenshots
+
+### Power BI Sales Dashboard
+![Dashboard Screenshot](./Task%203/dashboard.png.png)
+
+### SQL Query Results
+![SQL Query Screenshot](./Task%202/charts/category_sales.png)
+
+### Python Charts
+![Python Charts Screenshot](./Task%202/charts/histogram.png)
+
+### GitHub Repository
+![GitHub Repo Screenshot](./Task%205/screenshots/github_repo.png)
+
+---
+
+## �📬 Connect
+- **GitHub:** [samriddhijaiswal1510-jiya](https://github.com/samriddhijaiswal1510-jiya/ApexPlanet-Internship)
+- **LinkedIn:** [Samriddhi Jaiswal](https://www.linkedin.com/in/samriddhi-jaiswal-b2a9a3259/)
