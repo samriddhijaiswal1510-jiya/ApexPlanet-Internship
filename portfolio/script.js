@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   SAAYAN GHOOSHAL — PORTFOLIO SCRIPT
+   SAMRIDDHI JAISWAL — PORTFOLIO SCRIPT
    ApexPlanet Data Analytics Internship 2026
    ═══════════════════════════════════════════════════════════════ */
 
@@ -734,7 +734,7 @@
   if (!emailLink) return;
 
   emailLink.addEventListener('click', (e) => {
-    const email = 'saayan@example.com'; // Update with real email
+    const email = 'jiyajaiswal928@gmail.com'; // Update with real email
     if (navigator.clipboard) {
       e.preventDefault();
       navigator.clipboard.writeText(email).then(() => {
@@ -778,7 +778,7 @@
     'font-family: Poppins, sans-serif',
   ].join(';');
 
-  console.log('%c Saayan Ghooshal | Data Analytics Portfolio ', styles);
+  console.log('%c Samriddhi Jaiswal | Data Analytics Portfolio ', styles);
   console.log(
     '%cApexPlanet Software Pvt. Ltd. Internship 2026 | Built with HTML · CSS · Vanilla JS',
     'color: #B0B8C4; font-size: 12px;'
