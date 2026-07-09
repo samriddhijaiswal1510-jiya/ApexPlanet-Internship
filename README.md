@@ -1,4 +1,4 @@
-# 🌐 Saayan Ghooshal — Data Analytics Portfolio Website
+# 🌐 Samriddhi Jaiswal — Data Analytics Portfolio Website
 
 <div align="center">
 
@@ -118,7 +118,7 @@ ApexPlanet-Internship/
 1. **Resume** → Place `resume.pdf` in `assets/resume/`
 2. **Certificates** → Place PDFs in `assets/certificates/`
 3. **Profile Image** → Place in `assets/images/`
-4. **Update links** in `index.html` → search for `saayan@example.com` and `https://linkedin.com` and replace with real values
+4. **Update links** in `index.html` → search for `jiyajaiswal928@gmail.com` and `https://linkedin.com` and replace with real values
 
 ---
 
@@ -134,5 +134,5 @@ ApexPlanet-Internship/
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by <strong>Saayan Ghooshal</strong> · ApexPlanet Internship 2026</sub>
+  <sub>Built with ❤️ by <strong>Samriddhi Jaiswal</strong> · ApexPlanet Internship 2026</sub>
 </div>
