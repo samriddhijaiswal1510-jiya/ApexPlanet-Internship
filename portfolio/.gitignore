@@ -22,6 +22,3 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
-
-# Large installer binaries
-*.exe

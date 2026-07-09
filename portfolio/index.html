@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Samriddhi Jaiswal – Data Analytics Intern at ApexPlanet Software Pvt. Ltd. B.Tech CSE Student, Aspiring Software Engineer & Data Enthusiast. Explore my 60-day internship journey." />
+  <meta name="keywords" content="Samriddhi Jaiswal, Data Analytics, ApexPlanet, Portfolio, Python, SQL, Power BI, Machine Learning" />
+  <meta name="author" content="Samriddhi Jaiswal" />
+  <meta property="og:title" content="Samriddhi Jaiswal | Data Analytics Portfolio" />
+  <meta property="og:description" content="60-Day Data Analytics Internship Portfolio – ApexPlanet Software Pvt. Ltd." />
+  <meta property="og:type" content="website" />
+  <title>Samriddhi Jaiswal | Data Analytics Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- LOADING SCREEN                                         -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-logo">SJ</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-text">Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- CURSOR GLOW                                            -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div id="cursor-glow" class="cursor-glow"></div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SCROLL PROGRESS BAR                                    -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- NAVIGATION                                             -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Samriddhi Jaiswal – Home">
+        <span class="logo-text">SJ</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="#home"         role="menuitem" class="nav-link active">Home</a></li>
+        <li role="none"><a href="#about"        role="menuitem" class="nav-link">About</a></li>
+        <li role="none"><a href="#skills"       role="menuitem" class="nav-link">Skills</a></li>
+        <li role="none"><a href="#internship"   role="menuitem" class="nav-link">Internship</a></li>
+        <li role="none"><a href="#projects"     role="menuitem" class="nav-link">Projects</a></li>
+
+        <li role="none"><a href="#contact"      role="menuitem" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="ham-bar"></span>
+        <span class="ham-bar"></span>
+        <span class="ham-bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- HERO SECTION                                           -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section id="home" class="hero" aria-label="Hero Section">
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas" class="particles-canvas" aria-hidden="true"></canvas>
+
+    <!-- Gradient Orbs -->
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-fade">👋 Welcome to my Portfolio</p>
+
+      <h1 class="hero-title reveal-up">
+        Hi, I'm <span class="gradient-text">Samriddhi Jaiswal</span>
+      </h1>
+
+      <p class="hero-subtitle reveal-up delay-1">
+        B.Tech Computer Science Student &bull; Data Analytics Intern @ ApexPlanet Software Pvt. Ltd.
+      </p>
+
+      <div class="hero-typing reveal-up delay-2">
+        <span class="typing-prefix">Skilled in</span>&nbsp;
+        <span id="typed-text" class="typed-text"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+
+      <div class="hero-tagline reveal-up delay-3">
+        Aspiring Software Engineer &nbsp;|&nbsp; Data Analytics Enthusiast
+      </div>
+
+      <div class="hero-buttons reveal-up delay-4">
+        <a href="#internship" id="btn-internship" class="btn btn-primary">
+          <span>View Internship</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="https://github.com/samriddhijaiswal1510-jiya/ApexPlanet-Internship" id="btn-github" class="btn btn-glass" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com" id="btn-linkedin" class="btn btn-glass" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+
+      <a href="#about" class="hero-scroll-arrow" aria-label="Scroll down">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- ABOUT SECTION                                          -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section id="about" class="section about-section" aria-label="About Me">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Passionate about data, driven by curiosity</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Illustration -->
+        <div class="about-visual reveal-fade">
+          <div class="about-image-wrapper">
+            <div class="about-avatar">
+              <div class="avatar-initials">SJ</div>
+              <div class="avatar-ring ring-1"></div>
+              <div class="avatar-ring ring-2"></div>
+              <div class="avatar-ring ring-3"></div>
+            </div>
+            <div class="about-badge badge-1">
+              <span class="badge-icon">🎓</span>
+              <span>B.Tech CSE</span>
+            </div>
+            <div class="about-badge badge-2">
+              <span class="badge-icon">📊</span>
+              <span>Data Analytics</span>
+            </div>
+            <div class="about-badge badge-3">
+              <span class="badge-icon">🐍</span>
+              <span>Python & SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="about-content reveal-up delay-1">
+          <h3 class="about-heading">Building the future through <span class="gradient-text">Data & Code</span></h3>
+          <p class="about-text">
+            I'm <strong>Samriddhi Jaiswal</strong>, a B.Tech Computer Science Engineering student with a deep passion for Data Analytics and Artificial Intelligence. Currently completing my 60-day Data Analytics Internship at <strong>ApexPlanet Software Pvt. Ltd.</strong> (22 May – 19 July 2026), where I've worked on real-world datasets, built interactive dashboards, and delivered statistically validated business insights.
+          </p>
+          <p class="about-text">
+            My journey in technology is driven by a belief that <em>data is the new language of business</em>. I'm passionate about transforming raw data into meaningful stories that drive strategic decisions.
+          </p>
+          <p class="about-text">
+            I'm a continuous learner who believes in learning by building. From cleaning messy datasets with Python/Pandas to constructing Power BI dashboards that tell compelling stories — every project sharpens my craft.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">🎯 Role</span>
+              <span class="info-value">Data Analytics Intern</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">🏢 Organization</span>
+              <span class="info-value">ApexPlanet Software Pvt. Ltd.</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📅 Duration</span>
+              <span class="info-value">22 May – 19 July 2026</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">🌐 Interests</span>
+              <span class="info-value">AI · Data Analytics · Business Intelligence</span>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-glass">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILLS SECTION                                         -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section id="skills" class="section skills-section" aria-label="Skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">My Arsenal</span>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+        <p class="section-subtitle">Tools I've mastered during my internship journey</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Programming -->
+        <div class="skill-card reveal-up delay-1" data-category="programming">
+          <div class="skill-card-header">
+            <div class="skill-card-icon">💻</div>
+            <h3 class="skill-card-title">Programming</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span class="skill-name">SQL</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span class="skill-name">Java</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Libraries -->
+        <div class="skill-card reveal-up delay-2" data-category="libraries">
+          <div class="skill-card-header">
+            <div class="skill-card-icon">📚</div>
+            <h3 class="skill-card-title">Libraries</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span class="skill-name">Pandas</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span class="skill-name">NumPy</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span class="skill-name">Matplotlib</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span class="skill-name">Seaborn</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card reveal-up delay-3" data-category="tools">
+          <div class="skill-card-header">
+            <div class="skill-card-icon">🛠️</div>
+            <h3 class="skill-card-title">Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Jupyter</span>
+            <span class="skill-tag">SQLite</span>
+          </div>
+        </div>
+
+        <!-- Concepts -->
+        <div class="skill-card reveal-up delay-4" data-category="concepts">
+          <div class="skill-card-header">
+            <div class="skill-card-icon">🧠</div>
+            <h3 class="skill-card-title">Concepts</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">EDA</span>
+            <span class="skill-tag">Data Cleaning</span>
+            <span class="skill-tag">Dashboarding</span>
+            <span class="skill-tag">Statistics</span>
+            <span class="skill-tag">Business Intelligence</span>
+            <span class="skill-tag">KPIs</span>
+            <span class="skill-tag">Data Storytelling</span>
+            <span class="skill-tag">Hypothesis Testing</span>
+            <span class="skill-tag">Machine Learning</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- STATISTICS SECTION                                     -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="section stats-section" aria-label="Statistics">
+    <div class="stats-bg-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal-up">
+          <div class="stat-number" data-target="60" data-suffix="">60</div>
+          <div class="stat-label">Days Completed</div>
+        </div>
+        <div class="stat-item reveal-up delay-1">
+          <div class="stat-number" data-target="5" data-suffix="">5</div>
+          <div class="stat-label">Major Tasks</div>
+        </div>
+        <div class="stat-item reveal-up delay-2">
+          <div class="stat-number" data-target="20" data-suffix="+">20+</div>
+          <div class="stat-label">Visualizations</div>
+        </div>
+        <div class="stat-item reveal-up delay-3">
+          <div class="stat-number" data-target="15" data-suffix="+">15+</div>
+          <div class="stat-label">Business Insights</div>
+        </div>
+        <div class="stat-item reveal-up delay-4">
+          <div class="stat-number" data-target="100" data-suffix="%">100%</div>
+          <div class="stat-label">Completion</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- INTERNSHIP TIMELINE SECTION                            -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section id="internship" class="section internship-section" aria-label="Internship Timeline">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">The Journey</span>
+        <h2 class="section-title">Internship <span class="gradient-text">Timeline</span></h2>
+        <p class="section-subtitle">60 days · 5 tasks · complete data analytics lifecycle</p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Start -->
+        <div class="timeline-item start reveal-fade">
+          <div class="timeline-dot start-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">22 May 2026</div>
+            <h3 class="timeline-title">🚀 Internship Begins</h3>
+            <p class="timeline-desc">Joined ApexPlanet Software Pvt. Ltd. as a Data Analytics Intern. Onboarding, goal setting, and dataset exploration.</p>
+          </div>
+        </div>
+
+        <!-- Task 1 -->
+        <div class="timeline-item reveal-fade delay-1" data-task="1">
+          <div class="timeline-dot task-dot"></div>
+          <div class="timeline-content expandable" id="tl-task-1">
+            <div class="timeline-header">
+              <div class="timeline-date">Week 1</div>
+              <button class="expand-btn" aria-expanded="false" aria-controls="tl-detail-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <h3 class="timeline-title">Task 1 — Data Immersion &amp; Wrangling</h3>
+            <p class="timeline-desc">Understanding datasets, cleaning, transformations, and feature engineering.</p>
+            <div class="timeline-detail" id="tl-detail-1">
+              <ul>
+                <li>Diagnosed raw Amazon product data (1,465 records × 16 columns)</li>
+                <li>Removed duplicates and filled missing <code>rating_count</code> values</li>
+                <li>Stripped currency symbols, converted data types</li>
+                <li>Engineered 9 new features (savings, discount_tier, price_segment, etc.)</li>
+                <li>Applied IQR-based outlier detection</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tl-tag">Pandas</span>
+                <span class="tl-tag">Data Cleaning</span>
+                <span class="tl-tag">Feature Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task 2 -->
+        <div class="timeline-item reveal-fade delay-2" data-task="2">
+          <div class="timeline-dot task-dot"></div>
+          <div class="timeline-content expandable" id="tl-task-2">
+            <div class="timeline-header">
+              <div class="timeline-date">Week 2–3</div>
+              <button class="expand-btn" aria-expanded="false" aria-controls="tl-detail-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <h3 class="timeline-title">Task 2 — EDA &amp; Business Intelligence</h3>
+            <p class="timeline-desc">Descriptive statistics, SQL queries, visualizations, and actionable insights.</p>
+            <div class="timeline-detail" id="tl-detail-2">
+              <ul>
+                <li>Answered 9 business questions using SQL on SQLite database</li>
+                <li>Built multi-table JOINs splitting data into orders and order_items schemas</li>
+                <li>Created correlation heatmap, scatter plot, pair plot, monthly trend charts</li>
+                <li>Key Insight: West region generates highest revenue; Technology is top category</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tl-tag">EDA</span>
+                <span class="tl-tag">SQL</span>
+                <span class="tl-tag">Seaborn</span>
+                <span class="tl-tag">Business Intelligence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task 3 -->
+        <div class="timeline-item reveal-fade delay-3" data-task="3">
+          <div class="timeline-dot task-dot"></div>
+          <div class="timeline-content expandable" id="tl-task-3">
+            <div class="timeline-header">
+              <div class="timeline-date">Week 4</div>
+              <button class="expand-btn" aria-expanded="false" aria-controls="tl-detail-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <h3 class="timeline-title">Task 3 — Deep-Dive Analysis &amp; Interactive Dashboarding</h3>
+            <p class="timeline-desc">KPI definition, business problem selection, and Power BI dashboard design.</p>
+            <div class="timeline-detail" id="tl-detail-3">
+              <ul>
+                <li>Defined 5 core KPIs: Total Sales ($2.25M), Orders (4,916), Avg Order Value ($458), Customers (793), Products (1,850+)</li>
+                <li>Built interactive Power BI dashboard with regional, segment, and category breakdowns</li>
+                <li>Identified top-performing products and shipping mode efficiency</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tl-tag">Power BI</span>
+                <span class="tl-tag">KPIs</span>
+                <span class="tl-tag">Dashboard</span>
+                <span class="tl-tag">Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task 4 -->
+        <div class="timeline-item reveal-fade delay-4" data-task="4">
+          <div class="timeline-dot task-dot"></div>
+          <div class="timeline-content expandable" id="tl-task-4">
+            <div class="timeline-header">
+              <div class="timeline-date">Week 5–6</div>
+              <button class="expand-btn" aria-expanded="false" aria-controls="tl-detail-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <h3 class="timeline-title">Task 4 — Data Storytelling &amp; Statistical Validation</h3>
+            <p class="timeline-desc">Business presentation, hypothesis testing, and actionable recommendations.</p>
+            <div class="timeline-detail" id="tl-detail-4">
+              <ul>
+                <li>Applied Welch's Two-Sample T-Test (scipy.stats) comparing Technology vs Furniture sales</li>
+                <li>Defined H₀ (no difference) vs H₁ (significant difference) and interpreted results</li>
+                <li>Delivered a business-ready presentation with statistical validation</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tl-tag">Storytelling</span>
+                <span class="tl-tag">Statistics</span>
+                <span class="tl-tag">Hypothesis Testing</span>
+                <span class="tl-tag">Presentation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task 5 -->
+        <div class="timeline-item reveal-fade delay-5" data-task="5">
+          <div class="timeline-dot task-dot"></div>
+          <div class="timeline-content expandable" id="tl-task-5">
+            <div class="timeline-header">
+              <div class="timeline-date">Week 7–8</div>
+              <button class="expand-btn" aria-expanded="false" aria-controls="tl-detail-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <h3 class="timeline-title">Task 5 — Capstone Integration &amp; Portfolio</h3>
+            <p class="timeline-desc">Full portfolio website, GitHub repository, documentation, and personal branding.</p>
+            <div class="timeline-detail" id="tl-detail-5">
+              <ul>
+                <li>Consolidated all 5 tasks into a master portfolio repository</li>
+                <li>Built this premium portfolio website with HTML, CSS, and JavaScript</li>
+                <li>Wrote comprehensive READMEs and documented key learnings</li>
+                <li>Finalized GitHub repository structure for public showcase</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tl-tag">Portfolio</span>
+                <span class="tl-tag">Documentation</span>
+                <span class="tl-tag">GitHub</span>
+                <span class="tl-tag">Presentation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- End -->
+        <div class="timeline-item end reveal-fade delay-5">
+          <div class="timeline-dot end-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">19 July 2026</div>
+            <h3 class="timeline-title">🎉 Internship Completed</h3>
+            <p class="timeline-desc">Successfully completed 60 days of Data Analytics internship with 5 major deliverables and a production-ready portfolio.</p>
+          </div>
+        </div>
+
+      </div><!-- .timeline -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- PROJECTS SECTION                                       -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section id="projects" class="section projects-section" aria-label="Projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Internship <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Five end-to-end data analytics deliverables</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Task 1 -->
+        <div class="project-card reveal-up delay-1" data-project="1">
+          <div class="project-card-gradient"></div>
+          <div class="project-card-inner">
+            <div class="project-number">01</div>
+            <div class="project-icon">🧹</div>
+            <h3 class="project-title">Data Immersion &amp; Wrangling</h3>
+            <p class="project-desc">Worked on understanding datasets, identifying missing values, duplicates, outliers, formatting inconsistencies, data cleaning, transformations, feature engineering, and preparing an analysis-ready dataset.</p>
+            <div class="project-skills">
+              <span class="project-skill">Pandas</span>
+              <span class="project-skill">Data Cleaning</span>
+              <span class="project-skill">Feature Engineering</span>
+              <span class="project-skill">Data Dictionary</span>
+            </div>
+            <div class="project-deliverables">
+              <h4>Deliverables</h4>
+              <ul>
+                <li>✅ Cleaning Script (<code>data_cleaning.py</code>)</li>
+                <li>✅ Clean Dataset (<code>clean_amazon.csv</code>)</li>
+                <li>✅ Data Dictionary</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/samriddhijaiswal1510-jiya/ApexPlanet-Internship/tree/main/Task%201" class="btn-project btn-project-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task 2 -->
+        <div class="project-card reveal-up delay-2" data-project="2">
+          <div class="project-card-gradient"></div>
+          <div class="project-card-inner">
+            <div class="project-number">02</div>
+            <div class="project-icon">📊</div>
+            <h3 class="project-title">Exploratory Data Analysis &amp; Business Intelligence</h3>
+            <p class="project-desc">Performed descriptive statistics, SQL-based business queries, visualizations, correlation analysis, dashboard planning, and extracted actionable business insights.</p>
+            <div class="project-skills">
+              <span class="project-skill">EDA</span>
+              <span class="project-skill">SQL</span>
+              <span class="project-skill">Visualization</span>
+              <span class="project-skill">Business Intelligence</span>
+            </div>
+            <div class="project-deliverables">
+              <h4>Deliverables</h4>
+              <ul>
+                <li>✅ EDA Report (<code>eda_analysis.ipynb</code>)</li>
+                <li>✅ SQL Queries (<code>sales.db</code>)</li>
+                <li>✅ Business Charts</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/samriddhijaiswal1510-jiya/ApexPlanet-Internship/tree/main/Task%202" class="btn-project btn-project-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task 3 -->
+        <div class="project-card reveal-up delay-3" data-project="3">
+          <div class="project-card-gradient"></div>
+          <div class="project-card-inner">
+            <div class="project-number">03</div>
+            <div class="project-icon">🗂️</div>
+            <h3 class="project-title">Deep-Dive Analysis &amp; Interactive Dashboarding</h3>
+            <p class="project-desc">Defined KPIs, selected a business problem, performed deep-dive analysis, and designed an interactive dashboard using business intelligence principles.</p>
+            <div class="project-skills">
+              <span class="project-skill">Power BI</span>
+              <span class="project-skill">Dashboard</span>
+              <span class="project-skill">KPIs</span>
+              <span class="project-skill">Analytics</span>
+            </div>
+            <div class="project-deliverables">
+              <h4>Deliverables</h4>
+              <ul>
+                <li>✅ Interactive Dashboard (.pbix)</li>
+                <li>✅ Deep Dive Analysis Report</li>
+                <li>✅ Dashboard Screenshot</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/samriddhijaiswal1510-jiya/ApexPlanet-Internship/tree/main/Task%203" class="btn-project btn-project-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task 4 -->
+        <div class="project-card reveal-up delay-4" data-project="4">
+          <div class="project-card-gradient"></div>
+          <div class="project-card-inner">
+            <div class="project-number">04</div>
+            <div class="project-icon">📈</div>
+            <h3 class="project-title">Data Storytelling &amp; Statistical Validation</h3>
+            <p class="project-desc">Combined all findings into a business presentation, performed hypothesis testing, interpreted statistical results, and delivered actionable recommendations.</p>
+            <div class="project-skills">
+              <span class="project-skill">Storytelling</span>
+              <span class="project-skill">Statistics</span>
+              <span class="project-skill">Presentation</span>
+              <span class="project-skill">Business Insights</span>
+            </div>
+            <div class="project-deliverables">
+              <h4>Deliverables</h4>
+              <ul>
+                <li>✅ Business Presentation</li>
+                <li>✅ Hypothesis Testing Report</li>
+                <li>✅ Statistical Analysis PDF</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/samriddhijaiswal1510-jiya/ApexPlanet-Internship/tree/main/Task%204" class="btn-project btn-project-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task 5 -->
+        <div class="project-card reveal-up delay-5 card-featured" data-project="5">
+          <div class="project-card-gradient"></div>
+          <div class="featured-badge">⭐ Capstone</div>
+          <div class="project-card-inner">
+            <div class="project-number">05</div>
+            <div class="project-icon">🌐</div>
+            <h3 class="project-title">Capstone Integration &amp; Portfolio</h3>
+            <p class="project-desc">Integrated all internship work into a professional portfolio website, GitHub repository, documentation, and personal branding — this very website you're viewing!</p>
+            <div class="project-skills">
+              <span class="project-skill">Portfolio</span>
+              <span class="project-skill">Documentation</span>
+              <span class="project-skill">GitHub</span>
+              <span class="project-skill">Presentation</span>
+            </div>
+            <div class="project-deliverables">
+              <h4>Deliverables</h4>
+              <ul>
+                <li>✅ Portfolio Website (you're here!)</li>
+                <li>✅ Master README</li>
+                <li>✅ Final Reflection Document</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/samriddhijaiswal1510-jiya/ApexPlanet-Internship" class="btn-project btn-project-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- .projects-grid -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- PROJECT GALLERY                                        -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="section gallery-section" aria-label="Project Gallery">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Visual Showcase</span>
+        <h2 class="section-title">Project <span class="gradient-text">Gallery</span></h2>
+        <p class="section-subtitle">Screenshots and visualizations from the internship</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-large reveal-fade" data-label="Power BI Sales Dashboard">
+          <img src="images/powerbi-dashboard.png" alt="Power BI Sales Dashboard" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-label">Power BI Sales Dashboard</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-fade delay-1" data-label="EDA – Correlation Heatmap">
+          <img src="images/correlation-heatmap.png" alt="Correlation Heatmap – Scatter Plot" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-label">Correlation Heatmap</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-fade delay-2" data-label="Region Sales Analysis">
+          <img src="images/regional-analysis.png" alt="Region vs Sales Analysis" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-label">Regional Sales Analysis</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-fade delay-3" data-label="Category Performance Chart">
+          <img src="images/category-analysis.png" alt="Category vs Sales Analysis" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-label">Category Performance Chart</span>
+          </div>
+        </div>
+        <div class="gallery-item gallery-wide reveal-fade delay-4" data-label="Hypothesis Testing Results">
+          <img src="images/hypothesis-testing.png" alt="Sales Analysis Using Hypothesis Testing" class="gallery-img" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-label">Hypothesis Testing Results</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- LEARNING OUTCOMES SECTION                              -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="section learning-section" aria-label="Learning Outcomes">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Key Takeaways</span>
+        <h2 class="section-title">Learning <span class="gradient-text">Outcomes</span></h2>
+        <p class="section-subtitle">Skills and knowledge gained through this internship</p>
+      </div>
+
+      <div class="learning-grid">
+        <div class="learning-item reveal-up delay-1">
+          <div class="learning-check">✓</div>
+          <div class="learning-content">
+            <h4>Data Cleaning with Pandas</h4>
+            <p>Mastered end-to-end data preprocessing — handling nulls, type conversions, outlier detection, and feature engineering on real-world messy datasets.</p>
+          </div>
+        </div>
+        <div class="learning-item reveal-up delay-2">
+          <div class="learning-check">✓</div>
+          <div class="learning-content">
+            <h4>SQL for Business Analytics</h4>
+            <p>Built complex SQL queries with JOINs, GROUP BY, aggregations, and sub-queries to answer 9 real business questions on sales data.</p>
+          </div>
+        </div>
+        <div class="learning-item reveal-up delay-3">
+          <div class="learning-check">✓</div>
+          <div class="learning-content">
+            <h4>Exploratory Data Analysis</h4>
+            <p>Developed proficiency in univariate and multivariate analysis, statistical summaries, distribution analysis, and deriving actionable insights.</p>
+          </div>
+        </div>
+        <div class="learning-item reveal-up delay-4">
+          <div class="learning-check">✓</div>
+          <div class="learning-content">
+            <h4>Data Visualization</h4>
+            <p>Created compelling charts — correlation heatmaps, scatter plots, bar charts, and trend lines — using Matplotlib and Seaborn.</p>
+          </div>
+        </div>
+        <div class="learning-item reveal-up delay-1">
+          <div class="learning-check">✓</div>
+          <div class="learning-content">
+            <h4>Power BI Dashboarding</h4>
+            <p>Designed interactive Power BI dashboards with KPI cards, slicers, regional maps, and category-level breakdowns for executive reporting.</p>
+          </div>
+        </div>
+        <div class="learning-item reveal-up delay-2">
+          <div class="learning-check">✓</div>
+          <div class="learning-content">
+            <h4>Statistics &amp; Hypothesis Testing</h4>
+            <p>Applied Welch's T-Test using SciPy to validate business hypotheses and interpret statistical significance in a real-world context.</p>
+          </div>
+        </div>
+        <div class="learning-item reveal-up delay-3">
+          <div class="learning-check">✓</div>
+          <div class="learning-content">
+            <h4>Git &amp; GitHub</h4>
+            <p>Maintained a structured, professional GitHub repository with proper commits, documentation, and a master portfolio README.</p>
+          </div>
+        </div>
+        <div class="learning-item reveal-up delay-4">
+          <div class="learning-check">✓</div>
+          <div class="learning-content">
+            <h4>Business Storytelling</h4>
+            <p>Learned to translate technical findings into business-ready narratives — connecting data patterns to actionable strategic recommendations.</p>
+          </div>
+        </div>
+        <div class="learning-item reveal-up delay-5">
+          <div class="learning-check">✓</div>
+          <div class="learning-content">
+            <h4>Portfolio Development</h4>
+            <p>Built a production-grade, fully responsive portfolio website from scratch using HTML5, CSS3, and Vanilla JavaScript — showcasing all internship work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- CONTACT SECTION                                        -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section id="contact" class="section contact-section" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Open to opportunities, collaborations, and conversations</p>
+      </div>
+
+      <div class="contact-card reveal-up delay-1">
+        <div class="contact-card-glow"></div>
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <h3 class="contact-heading">Let's build something great together</h3>
+            <p class="contact-text">I'm currently open to internship extensions, project collaborations, and exciting opportunities in Data Analytics and AI. Feel free to reach out!</p>
+
+            <div class="contact-links">
+              <a href="https://github.com/samriddhijaiswal1510-jiya/ApexPlanet-Internship" id="contact-github" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <div class="contact-link-icon github-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </div>
+                <div class="contact-link-text">
+                  <span class="contact-link-label">GitHub</span>
+                  <span class="contact-link-val">samriddhijaiswal1510-jiya</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com" id="contact-linkedin" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <div class="contact-link-icon linkedin-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </div>
+                <div class="contact-link-text">
+                  <span class="contact-link-label">LinkedIn</span>
+                  <span class="contact-link-val">Samriddhi Jaiswal</span>
+                </div>
+              </a>
+
+              <a href="mailto:jiyajaiswal928@gmail.com" id="contact-email" class="contact-link">
+                <div class="contact-link-icon email-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-link-text">
+                  <span class="contact-link-label">Email</span>
+                  <span class="contact-link-val">jiyajaiswal928@gmail.com</span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="contact-availability">
+            <div class="availability-card">
+              <div class="avail-dot"></div>
+              <h4>Open to Opportunities</h4>
+              <p>Internships · Projects · Collaborations · Full-Time Roles</p>
+            </div>
+            <div class="tech-stack-display">
+              <p class="tech-label">Currently working with</p>
+              <div class="tech-pills">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">SQL</span>
+                <span class="tech-pill">Power BI</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">Machine Learning</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- FOOTER                                                 -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-logo">SJ</div>
+      <p class="footer-text">Made with <span class="heart">❤️</span> by <strong>Samriddhi Jaiswal</strong></p>
+      <p class="footer-sub">ApexPlanet Data Analytics Internship Portfolio &bull; 2026</p>
+      <div class="footer-links">
+        <a href="#home" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Samriddhi Jaiswal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- FLOATING ELEMENTS                                      -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Floating Social Icons -->
+  <div class="floating-socials" aria-label="Social links">
+    <a href="https://github.com/samriddhijaiswal1510-jiya/ApexPlanet-Internship" class="float-social" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+    </a>
+    <a href="https://linkedin.com" class="float-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+    <div class="float-social-line"></div>
+  </div>
+
+  <!-- Gallery Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <div class="lightbox-content">
+      <div id="lightbox-body" class="lightbox-body"></div>
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
